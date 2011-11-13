@@ -2,9 +2,7 @@ require 'rubygems'
 require 'date'
 
 class DriverLicenseParser
-  
-  # Takes an array of drivers licenses
-  
+
   def initialize(license=[])
     @license = license
     parse_mag_strip
