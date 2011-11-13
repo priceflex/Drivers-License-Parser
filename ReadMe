@@ -1,7 +1,7 @@
 This is a Drivers License Parser for AAMVA stardard formatting. 
 Special Thanks to www.microguideinc.com for there inital code on there blog. http://www.microguideinc.com/blog_posts/show2
 
-dl = ""; #Drivers License String from Magtek 
+dl = "" #Drivers License String from Magtek 
 puts parsed_dl = DriverLicenseParser.new(dl)
 
 puts parsed_dl.years_old
