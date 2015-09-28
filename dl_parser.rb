@@ -5,7 +5,7 @@ class DriverLicenseParser
 
   attr_accessor :first_name, :last_name, :middle_name, :address_1, :city, :state, :zip, :birth_month, :birth_year, :birth_day, :license_class, :sex, :hair_color, :eyes_color, :lbs
 
-  def initialize(license=[])
+  def initialize(license = [])
     @license = license
     parse_mag_strip
   end
@@ -29,7 +29,7 @@ class DriverLicenseParser
   end
 
   def dimension
-    {:feet => @ft, :inches => @in }
+    { :feet => @ft, :inches => @in }
   end
 
   def to_s
@@ -45,11 +45,11 @@ class DriverLicenseParser
   end
 
   def can_drink?
-    years_old > 21 ? true : false
+    years_old >= 21 ? true : false
   end
 
   def can_smoke?
-    years_old > 18 ? true : false
+    years_old >= 18 ? true : false
   end
 
   private
